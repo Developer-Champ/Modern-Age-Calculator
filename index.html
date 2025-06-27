@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>📅 Age Calculator</h1>
+        
+        <div class="input-group">
+            <label for="birthdate">Your Date of Birth</label>
+            <input type="date" id="birthdate" max="">
+        </div>
+        
+        <button id="calculate-btn">Calculate My Age</button>
+        <div class="error" id="error"></div>
+        
+        <div class="result" id="result">
+            <div class="age" id="age-result"></div>
+            <div class="birthdate" id="birthdate-result"></div>
+            
+            <div class="details">
+                <div class="detail">
+                    <div class="detail-label">Years</div>
+                    <div class="detail-value" id="years">0</div>
+                </div>
+                <div class="detail">
+                    <div class="detail-label">Months</div>
+                    <div class="detail-value" id="months">0</div>
+                </div>
+                <div class="detail">
+                    <div class="detail-label">Days</div>
+                    <div class="detail-value" id="days">0</div>
+                </div>
+                <div class="detail">
+                    <div class="detail-label">Weeks</div>
+                    <div class="detail-value" id="weeks">0</div>
+                </div>
+                <div class="next-birthday" id="next-birthday">
+                    Next Birthday: -
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
